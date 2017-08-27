@@ -12,7 +12,7 @@ namespace DiffIntegrationTests
         {
             var client = new HttpClient();
 
-            var content = new StringContent("Some text");
+            var content = new StringContent("Some text new");
             var response = client.PostAsync("http://localhost:49591/v1/diff/1/left", content).Result;
 
             //Assert.AreEqual("Some text", response.Content.ReadAsStringAsync().Result);
